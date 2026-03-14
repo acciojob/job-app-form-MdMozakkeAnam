@@ -1,2 +1,42 @@
 
 /* Your CSS Code here. */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+form{
+    width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+h2{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input, select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+}
