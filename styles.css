@@ -1,42 +1,88 @@
-
-/* Your CSS Code here. */
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
 }
 
-form{
-    width: 350px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border: 1px solid #ccc;
-}
-
-h2{
-    text-align: center;
-}
-
-label{
-    display: block;
-    margin-top: 10px;
-}
-
-input, select{
+/* Form Container */
+.form-wrapper {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    max-width: 450px;
 }
 
-input[type="radio"]{
-    width: auto;
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
 }
 
-button{
-    margin-top: 15px;
+/* Field Layout */
+.field {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs and Select Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+input[type="url"],
+select {
     width: 100%;
     padding: 10px;
-    background-color: green;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Radio Button Specific Styling */
+.radio-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-options label {
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    background-color: #28a745;
     color: white;
     border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
 }
