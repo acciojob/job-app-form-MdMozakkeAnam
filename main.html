@@ -7,75 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
-    <div class="form-wrapper">
-        <h2>Job Application Form</h2>
-        <form method="POST">
-            <!-- Name Field -->
-            <div class="field">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+	<form method="post">
+		<label for="name">Name</label>
+		<input type="text" id="name" required>
+		<br><br>
+		
+		<label for="email">Email</label>
+		<input type="email" id="email" required>
+		<br><br>
 
-            <!-- Email Field -->
-            <div class="field">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+		<label>Gender</label>
+		<input type="radio" name="gender" required>
+		<label>Male</label>
+		<input type="radio" name="gender" required>
+		<label>Female</label>
+		<br><br>
 
-            <!-- Gender Field (Radio Buttons) -->
-            <div class="field">
-                <label>Gender*</label>
-                <div class="radio-options">
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label>
-                    
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-                    
-                    <input type="radio" id="other" name="gender" value="other" required>
-                    <label for="other">Other</label>
-                </div>
-            </div>
+		<label for="laptop">Laptop Brands</label>
+		<select id="laptop">
+			<option>Apple</option>
+			<option>Asus</option>
+			<option>HP</option>
+		</select>
+		<br><br>
 
-            <!-- Laptop Brands Dropdown -->
-            <div class="field">
-                <label for="laptop">Laptop Brands</label>
-                <select id="laptop" name="laptop">
-                    <option value="apple">Apple</option>
-                    <option value="asus">Asus</option>
-                    <option value="hp">HP</option>
-                </select>
-            </div>
+		<label for="age">Age</label>
+		<input type="number" id="age" required>
+		<br><br>
 
-            <!-- Age Field -->
-            <div class="field">
-                <label for="age">Age*</label>
-                <input type="number" id="age" name="age" required>
-            </div>
+		<label for="dob">Date of Birth</label>
+		<input type="date" id="dob" required>
+		<br><br>
 
-            <!-- Date of Birth Field -->
-            <div class="field">
-                <label for="dob">Date of Birth*</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
+		<label for="password">Password</label>
+		<input type="password" id="password" required>
+		<br><br>
 
-            <!-- Password Field -->
-            <div class="field">
-                <label for="password">Password*</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+		<label for="portfolio">Portfolio URL</label>
+		<input type="url" id="portfolio">
+		<br><br>
 
-            <!-- Portfolio URL Field -->
-            <div class="field">
-                <label for="portfolio">Portfolio URL</label>
-                <input type="url" id="portfolio" name="portfolio">
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+		<button type="submit">Submit</button>
+		
+	</form>
 
 </body>
 </html>
